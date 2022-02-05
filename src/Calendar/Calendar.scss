@@ -1,0 +1,385 @@
+.HeaderCalendar{
+  width: 100%;
+}
+.BreadcrumbDivHeaderCalendrier{
+  width: 100%;
+}
+.MesDirectsHeaderCalendrier{
+  width: 100%;
+  height: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: RGBA(0, 0, 0, 0.04);
+  margin-top: 0.5%;
+  padding: 1.8% 1.5%;
+}
+.div_retour{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.arrow{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-right: 0.5%;
+  cursor: pointer;
+}
+.h4{
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.85);
+  margin-top: 10px;
+}
+
+
+.CalendarFile{
+  width: 100%;
+  margin-top: 2%;
+}
+.event-list{
+  height:100%;
+  width:100%;
+  &__events{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height:100%;
+    width:100%;
+    &__list-tags{
+      width: 100% !important;
+      height: auto !important;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+      &--year{
+        display: flex;
+        padding-bottom: 5px;
+      }
+      &__tag{
+        background: transparent;
+        cursor: pointer;
+        .ant-badge-status{
+          width: 100%;
+          overflow: hidden;
+          font-size: 12px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        &--blue{
+          background-color: var(--tag-blue-background);
+          border: 1px solid var(--tag-blue-border);
+          .ant-badge-status{
+            color: var(--color-tag-text-blue);
+            &-text{
+              color: var(--color-tag-text-blue);
+            }
+          }
+        }
+        &--green{
+          background-color: var(--tag-green-background);
+          border: 1px solid var(--tag-green-border);
+          .ant-badge-status {
+            color: var(--color-tag-text-green);
+            &-text {
+              color: var(--color-tag-text-green);
+            }
+          }
+        }
+        &--gray{
+          background-color: var(--tag-Geekblue-background);
+          border: 1px solid var(--tag-Geekblue-border);
+          .ant-badge-status {
+            color: var(--color-tag-text-gray);
+            .ant-badge-status-text{
+              color: var(--color-tag-text-gray);
+            }
+          }
+        }
+        &--year{
+          width: 50%;
+          margin: 0;
+          .ant-badge-status{
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+          }
+          .ant-badge-status-dot{
+            display: none;
+          }
+        }
+        @media screen and (max-width: 767px){
+          display: flex;
+          align-items: center;
+          width: 100%;
+        }
+        @media screen and (max-width: 340px){
+          padding: 0 2px;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+.hidden-calendar{
+  display: none!important;
+}
+.notes-month {
+  font-size: 28px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.notes-month section {
+  font-size: 28px;
+}
+.body_Modal{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.div_image_modal{
+  width: 454px;
+  height: 264px;
+}
+.div_image_modal img{
+  width: 100%;
+  height: 100%;
+}
+.div_time_calendar{
+  width: 100%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2% 0;
+}
+.modal-div2_time_calendar{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.modal-div2_time_calendar p{
+  margin-right: 0.2%;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.85);
+  align-items: center;
+}
+.modal-footer{
+  //width: 454px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+ justify-content: space-between;
+  align-items: center;
+  &--end{
+    justify-content: flex-end!important;
+  }
+}
+.modal_footer_EnCours , .modal_footer_Archivé{
+  width: 454px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.tag_moment{
+  background: var(--tag-green-background);
+}
+.Modal-header-title{
+  font-size: 16px;
+  font-weight: 500;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--white_color);
+  .ant-badge-status-text{
+    color: var(--white_color);
+  }
+white-space: nowrap;
+  @media screen and (max-width: 598px){
+    width:80%;
+  }
+}
+.div-calendar-content{
+  font-size: 16px;
+  font-weight: 500;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  @media screen and (max-width: 598px){
+    width:90%;
+  }
+}
+@media screen and (max-width: 767px) {
+
+  .ant-dropdown-menu{
+    //margin-left: -50px !important;
+    //margin-top: -5px;
+  }
+  .DataTable{
+    margin-top: 1%;
+    @media (max-width: 768px) {
+      padding: 4%;
+    }
+  }
+  .DataTable .ant-table-row{
+    border: 1px solid var(--border_color) !important;
+    min-height: 90px;
+    max-width: 100% !important;
+    position: relative !important;
+    margin-bottom: 2% !important;
+    margin-top: 2% !important;
+    overflow: hidden;
+  }
+  .DataTable .ant-table-cell{
+    border: 0 !important;
+  }
+  .DataTable .ant-table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  }
+  .DataTable .ant-table tr {
+    display: block;
+  }
+  #span_diffuser{
+    display: none;
+  }
+  .span_action{
+    height: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px;
+  }
+  #spn_ajouter{
+    display: none !important;
+  }
+  #Text_Calendar{
+    display: none !important;
+  }
+  .div_delete_select{
+    width: 100%;
+    height: 40px;
+  }
+  //.Calendrier{
+  //  width: 15%;
+  //}
+  .showVideosDiv .card .ant-card-body{
+    padding: 0px !important;
+  }
+  //.card2{
+  //  padding: 10px !important;
+  //}
+  .card2 .showVideosDiv .card .ant-card-body {
+    magin: -10px !important;
+  }
+  .div_Notification_user_dar{
+    display: none !important;
+  }
+  .div_home_logo{
+    width: 100% !important;
+    padding: 10px 0px;
+  }
+  .menu_hamg{
+    display: block !important;
+    font-size: 20px;
+  }
+  .span_time{
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white_color);
+    margin-bottom: 2%;
+  }
+  .tag_moment{
+    width: 100%;
+  }
+  .spn_Date_event{
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white_color);
+  }
+  .modal-footer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .div_time_calendar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+  .modal-div2_time_calendar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
+  }
+  .modal-div2_time_calendar p{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  .div2_time_calendar_icon{
+    margin-right:11px;
+  }
+
+}
+.div2_time_calendar_icon{
+  margin-right:11px;
+}
+
+@media (max-width: 320px) {
+  .ant-modal{
+    //padding: 0;
+    //top: 50px;
+  }
+}
+.button-ghost {
+  background-color: #2B96FF;
+  border: 1px solid #2B96FF;
+  color: #2B96FF;
+  -webkit-text-fill-color: #2B96FF;
+  //ackground: rgb(19, 200, 200);
+}

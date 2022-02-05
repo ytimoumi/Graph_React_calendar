@@ -1,0 +1,11 @@
+version: "3"
+services:
+  giskard_front:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    stdin_open: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
