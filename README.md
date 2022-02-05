@@ -30,3 +30,9 @@ Password: UzTQ4356NffpN3i9
 
 ```
 ###  NB: Still under development.
+work done for now:
+- see slots available for reservations
+- provide a `start`, `end`, `title` and `email` for a new reservation and save it
+Remaining work:
+- add/delete availability slots
+- delete reservation
